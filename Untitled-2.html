@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITE Student Login Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 350px;
+        }
+        button {
+            background-color: #333;
+            width: 100%;
+            color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type=text]:focus, input[type=password]:focus {
+            border-color: #6a11cb;
+            outline: none;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .remember-me input {
+            margin-right: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>CITE Student Login Form</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" name="password" required>
+            <button type="submit">Log In</button>
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Keep me logged in</label>
+            </div>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <input type="reset" class="erase" value="Clear">
+        </form>
+        <div class="footer">
+            <p>Forgot your <a href="#">password?</a></p>
+        </div>
+    </div>
+</body>
+</html>
